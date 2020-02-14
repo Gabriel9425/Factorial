@@ -7,8 +7,9 @@ window.addEventListener("load", () => {
     box.style.display = "block";
     show.style.display = "none";
     factorialnro.addEventListener('submit', () => {
-
-        var numero = document.querySelector("#valor").value;
+        
+        
+        var numero =document.querySelector("#valor").value;
 
         function factorial(number) {
 
@@ -22,16 +23,16 @@ window.addEventListener("load", () => {
 
         var resultado = document.querySelector("#resultado span");
         resultado.innerHTML = factorial(numero);
-        numero=0;
         show.style.display = "block";
         box.style.display = "none";
+        numero='';
         
         
     });
     
     reseteo.addEventListener('click',()=>
     {
-       
+        var numero =document.querySelector("#valor").value='';
         box.style.display = "block";
         show.style.display = "none";
     });
