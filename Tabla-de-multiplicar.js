@@ -1,7 +1,7 @@
 'use strict'
 window.addEventListener("load", () => {
-    var factorialnro = document.querySelector("#Numero1");
-    var show = document.querySelector(".Muestra-Factorial");
+    var factorialnro = document.querySelector("#Numero2");
+    var show = document.querySelector(".Muestra-Tabla");
     var box = document.querySelector(".box");
     var reseteo = document.querySelector("#reset");
     box.style.display = "block";
@@ -10,30 +10,30 @@ window.addEventListener("load", () => {
         
         
         var numero =document.querySelector("#valor").value;
-        function factorial(number) {
+        
+        
+        var resultado = document.querySelector("#resultado-tabla span");
+        resultado.innerHTML='';
+        for(var i=1 ; i<=10 ; i++)
+        {
             
-            
-            
-            var fact = 1;
-            
-            for (var i = 1; i <= number; i++) {
-                fact *= i;
+            var mult = numero * i;
+
+            if(numero<0)
+            {
+                resultado.innerHTML="ingrese un valor positivo";
             }
-            return fact;
+           else{
+            resultado.innerHTML+= numero + " x "+ i + " = " + mult + "<br/>";}
+        
         }
         
-        var resultado = document.querySelector("#resultado-factorial span");
-          
-       if(numero<0)
-       {
-           resultado.innerHTML="ingrese un valor positivo";
-       }
-       else{
-        resultado.innerHTML = factorial(numero);
-    }
         show.style.display = "block";
         box.style.display = "none";
        
+    
+
+      
         
         
     });

@@ -6,25 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Factorial</title>
     <script type="text/javascript" src="factorial.js"></script>
+    <script type="text/javascript" src="Tabla-de-multiplicar.js"></script>
+
+
 </head>
 <body>
-    <h1>vamos a hacer el factorial de un numero</h1>
+    <h1>Sellecione Que operación Quiere Realizar </h1>
     <div class=box>
       <p>
-        <form action="#" method="POST" id="factorialnro" onsubmit="return false;">
-            <label for="valor">Valor a calcular</label><br/>
-            <input type="text" name ="valor" id="valor" /><br/>
-            <input type="submit" value="calcular" id="submit" /><br/>
+        <form action="#" method="POST" id="Numero1" onsubmit="return false;">
+            <label for="valor">Ingrese Un numero y sellecione la Operacion que desea hacer</label><br/>
+            <hr>
+            <input type="number" name ="valor" id="valor" /><br/>
+            <input type="submit" value="calcular Factorial" id="Factorial"/><br/>
         </form>
+
+        <form action="#" method="POST" id="Numero2" onsubmit="return false;">
+            <br/>
+            <input type="submit" value="Obtener La tabla de Multiplicar" id="tabla" /><br/>
+        </form>
+
     </p>
     </div>
 
-    <div class="muestra">
-        <p id="resultado">
+    <div class="Muestra-Factorial">
+        <p id="resultado-factorial">
             el resultado es: <span></span>
         </p>
     </div>
 
+    <div class="Muestra-Tabla">
+        <p id="resultado-tabla">
+            La tabla es: <br/><span></span><br/>
+           
+        </p>
+    </div>
     <div>
       
         <button  id="reset">Vuelva a ingresar un valor</button>
