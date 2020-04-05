@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
         }
         
         var resultado = document.querySelector("#resultado-factorial span");
-          
+          //Validamos los datos ingresados
        if(numero<0)
        {
            resultado.innerHTML="ingrese un valor positivo";

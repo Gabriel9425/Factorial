@@ -6,6 +6,7 @@ window.addEventListener("load", () => {
     var reseteo = document.querySelector("#reset");
     box.style.display = "block";
     show.style.display = "none";
+    ///Realiza la tabla de multiplicar
     factorialnro.addEventListener('submit', () => {
         
         
@@ -30,10 +31,6 @@ window.addEventListener("load", () => {
         
         show.style.display = "block";
         box.style.display = "none";
-       
-    
-
-      
         
         
     });
